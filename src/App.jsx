@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
 import './App.css'
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/posts'
+const BACKEND_URL = 'https://blog-backend-2-nmng.onrender.com'
+const API_URL = import.meta.env.VITE_API_URL || `${BACKEND_URL}/api/posts`
 
 const initialForm = {
   title: '',
@@ -358,7 +359,7 @@ function App() {
                     </button>
                     <button
                       type="button"
-                      onClick={() => handleDelete(post.id)}
+                      onClick={() => handleDelete(post?._id)}
                       className="rounded-full border border-rose-200 bg-rose-50 px-3 py-1.5 text-sm font-medium text-rose-600 transition hover:bg-rose-100"
                     >
                       Delete
