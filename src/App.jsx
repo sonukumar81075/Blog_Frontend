@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
 import './App.css'
 
-// const BACKEND_URL = import.meta.env.VITE_API_URL || 'https://blog-backend-2-nmng.onrender.com'
-const BACKEND_URL = 'http://localhost:5000'
+const BACKEND_URL = 'https://blog-backend-2-nmng.onrender.com'
+// const BACKEND_URL = 'http://localhost:5000'
 const API_URL = `${BACKEND_URL}/api/posts`
 
 const initialForm = {
