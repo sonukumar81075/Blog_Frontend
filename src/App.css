@@ -1,0 +1,5 @@
+.app-shell {
+  background: radial-gradient(circle at 20% 20%, #e0f2fe, #f8fafc 35%),
+    radial-gradient(circle at 80% 0%, #e5e7eb, #f8fafc 30%);
+  min-height: 100vh;
+}
